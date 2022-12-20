@@ -59,12 +59,12 @@ function mango:Initiate()
         sine = sine + dt
         dt = dt * 10
 
-        r.C0 = r.C0:Lerp(rC0 * cf(RootLerps), dt)
-        n.C0 = n.C0:Lerp(nC0 * cf(NeckLerps), dt)
-        rs.C0 = rs.C0:Lerp(rsC0 * cf(RightShoulderLerps), dt)
-        ls.C0 = ls.C0:Lerp(lsC0 * cf(LeftShoulderLerps), dt)
-        rh.C0 = rh.C0:Lerp(rhC0 * cf(RightHipLerps), dt)
-        lh.C0 = lh.C0:Lerp(lhC0 * cf(LeftHipLerps), dt)
+        r.C0 = r.C0:Lerp(rC0 * RootLerps, dt)
+        n.C0 = n.C0:Lerp(nC0 * NeckLerps, dt)
+        rs.C0 = rs.C0:Lerp(rsC0 * RightShoulderLerps, dt)
+        ls.C0 = ls.C0:Lerp(lsC0 * LeftShoulderLerps, dt)
+        rh.C0 = rh.C0:Lerp(rhC0 * RightHipLerps, dt)
+        lh.C0 = lh.C0:Lerp(lhC0 * LeftHipLerps, dt)
     end)
 end
 
