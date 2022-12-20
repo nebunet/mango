@@ -42,27 +42,27 @@ local nC0 = torso["Neck"].C0
 local rC0 = root["RootJoint"].C0
 
 local function rootLerp(lerps, dt)
-    r.C0 = r.C0:Lerp(rC0 * lerps, dt)
+    r.C0 = r.C0:Lerp(rC0 * cf(lerps), dt)
 end
 
 local function neckLerp(lerps, dt)
-    n.C0 = n.C0:Lerp(nC0 * lerps, dt)
+    n.C0 = n.C0:Lerp(nC0 * cf(lerps), dt)
 end
 
 local function rightArmLerp(lerps, dt)
-    rs.C0 = rs.C0:Lerp(rsC0 * lerps, dt)
+    rs.C0 = rs.C0:Lerp(rsC0 * cf(lerps), dt)
 end
 
 local function leftArmLerp(lerps, dt)
-    ls.C0 = ls.C0:Lerp(lsC0 * lerps, dt)
+    ls.C0 = ls.C0:Lerp(lsC0 * cf(lerps), dt)
 end
 
 local function rightLegLerp(lerps, dt)
-    rh.C0 = rh.C0:Lerp(rhC0 * lerps, dt)
+    rh.C0 = rh.C0:Lerp(rhC0 * cf(lerps), dt)
 end
 
 local function leftLegLerp(lerps, dt)
-    lh.C0 = lh.C0:Lerp(lhC0 * lerps, dt)
+    lh.C0 = lh.C0:Lerp(lhC0 * cf(lerps), dt)
 end
 
 local RL = cf(0, 0, 0) * angles(0, 0, 0)
@@ -117,12 +117,12 @@ function mango:Initiate()
         sine = sine + dt
         dt = dt * 10
 
-        rootLerp(RL)
-        neckLerp(HL)
-        rightArmLerp(RAL)
-        leftArmLerp(LAL)
-        rightLegLerp(RLL)
-        leftLegLerp(LLL)
+        rootLerp(RL, dt)
+        neckLerp(HL, dt)
+        rightArmLerp(RAL, dt)
+        leftArmLerp(LAL, dt)
+        rightLegLerp(RLL, dt)
+        leftLegLerp(LLL, dt)
     end)
 end
 
