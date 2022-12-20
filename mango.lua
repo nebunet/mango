@@ -55,7 +55,7 @@ function mango:Initiate()
 
     local sine = 1
 
-    hb:Connect(function(dt)
+    local anims = hb:Connect(function(dt)
         sine = sine + dt
         dt = dt * 10
 
@@ -65,6 +65,11 @@ function mango:Initiate()
         ls.C0 = ls.C0:Lerp(LeftShoulderLerps, dt)
         rh.C0 = rh.C0:Lerp(RightHipLerps, dt)
         lh.C0 = lh.C0:Lerp(LeftHipLerps, dt)
+    end)
+
+    plr.CharacterRemoving:Connect(function()
+        anims:Disconnect()
+        error("Stopped script successfully!")
     end)
 end
 
