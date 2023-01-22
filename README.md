@@ -4,8 +4,8 @@
 
 # <p align="center">Mango</p>
 
-<p align="center">A lerp animator for ROBLOX FE scripts</p>
+## <p align="center">A lerp animator for ROBLOX FE scripts</p>
 
 ### The Loadstring
 
-#### The loadstring can be found [here](https://raw.githubusercontent.com/nebunet/mango/master/MangoLoader).
+The loadstring can be found [here](https://raw.githubusercontent.com/nebunet/mango/master/MangoLoader).
