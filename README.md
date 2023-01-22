@@ -1,4 +1,6 @@
-<img align="center" src="logo.png" title="Logo">
+<p align="center">
+  <img src="logo.png" title="Mango Logo">
+</p>
 
 # <p align="center">Mango </p>
 
