@@ -1,4 +1,4 @@
-![Mango Logo][logo]
+<img align="center" src="logo.png" title="Logo">
 
 # <p align="center">Mango </p>
 
