@@ -1,3 +1,9 @@
+local function githubImport(resource)
+	task.spawn(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/nebunet/mango/master/scripts/fake/"..resource..".lua"))
+	end)
+end
+
 getgenv().lerpingtable = {
 	["torso"] = {
 		["x"] = {
@@ -173,7 +179,7 @@ getgenv().lerpingtable = {
 
 -- Instances:
 
-local Converted = {
+getgenv().Converted = {
 	["_mango"] = Instance.new("ScreenGui"),
 	["_scripts"] = Instance.new("Folder"),
 	["_drag2"] = Instance.new("LocalScript"),
@@ -1289,17 +1295,6 @@ local function TARZVO_fake_script() -- Fake Script: StarterGui.mango.scripts.pop
 			addValueStuff(lerpingtable[v.Name]["z"])
 		end
 	end
-
-	--[[
-
-			["pos"] = 0,
-			["sinepos"] = 0,
-			["sinespeedpos"] = 0,
-			["rot"] = 0,
-			["sinerot"] = 0,
-			["sinespeedrot"] = 0,
-
-	]]
 
 	template:Destroy()
 	script:Destroy()

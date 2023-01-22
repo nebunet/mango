@@ -1,6 +1,8 @@
-local ui = require(script.Parent.Parent.Parent.scripts:WaitForChild("ui"))
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/nebunet/mango/master/scripts/lib.lua"))()
 
-for _, v in pairs(script.Parent:GetChildren()) do
+local content = game:GetService("CoreGui").mango:WaitForChild("content")
+
+for _, v in pairs(content:GetChildren()) do
 	if v.Name == "convert" then
 		local buttons = v.buttons
 

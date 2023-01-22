@@ -1,6 +1,4 @@
---// script for loading mango animations
-
-local savename = "NEWSYSTEMTEST"
+local savename = "MANGOSAVE"
 
 loadstring(readfile("Mango Saves/"..savename..".mango"))()
 
