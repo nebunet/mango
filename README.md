@@ -6,6 +6,10 @@
 
 ## <p align="center">A lerp animator for ROBLOX FE scripts</p>
 
+### Discontinued notes
+
+Since Roblox patched most reanimates, this project is discontinuned. This may change in the future
+
 ### The Loadstring
 
 The loadstring can be found [here](https://raw.githubusercontent.com/nebunet/mango/master/MangoLoader).
