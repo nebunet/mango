@@ -6,7 +6,7 @@
 
 ## <p align="center">A lerp animator for ROBLOX FE scripts</p>
 
-### Discontinued notes
+### Discontinued note
 
 Since Roblox patched most reanimates, this project is discontinuned. This may change in the future
 
